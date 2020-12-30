@@ -1,0 +1,23 @@
+{
+  "name": "custom-video-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matnarcizo/custom-video-player.git"
+  },
+  "author": "matnarcizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matnarcizo/custom-video-player/issues"
+  },
+  "homepage": "https://github.com/matnarcizo/custom-video-player#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
