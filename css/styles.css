@@ -19,18 +19,43 @@ h1 {
   color: white;
 }
 
+.player {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .screen {
-  cursor: pointer;
-  width: 70%;
   background-color: black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.screen-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: 50% - 52px;
+  margin-top: -25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  background-image: url(../img/play.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
 
 .controls {
   background-color: #333;
   color: white;
-  width: 70%;
+  width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
