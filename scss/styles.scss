@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Questrial', 'sans-serif';
@@ -10,10 +12,12 @@ body {
   align-items: center;
   justify-content: center;
   max-height: 100vh;
-  margin: 0; }
+  margin: 0;
+}
 
 h1 {
-  color: white; }
+  color: white;
+}
 
 .player {
   position: relative;
@@ -21,13 +25,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .screen {
   background-color: black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 100%; }
+  width: 100%;
+}
 
 .screen-btn {
   width: 50px;
@@ -35,7 +41,7 @@ h1 {
   position: absolute;
   left: 50%;
   margin-left: -25px;
-  top: calc(50% - 52px);
+  top: calc(50% - 52px); //the 52px represents the controls height
   margin-top: -25px;
   border: none;
   outline: none;
@@ -43,7 +49,8 @@ h1 {
   background: transparent;
   background-image: url(../img/play.png);
   background-size: 90%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .controls {
   background-color: #333;
@@ -54,26 +61,40 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px; }
-  .controls .btn {
+  padding: 10px;
+  .btn {
     border: 0;
     background: transparent;
-    cursor: pointer; }
-  .controls .fa-play {
-    color: #28a745; }
-  .controls .fa-stop {
-    color: #dc3545; }
-  .controls .fa-pause {
-    color: white; }
-  .controls .timestamp {
+    cursor: pointer;
+  }
+  
+  .fa-play {
+    color: #28a745;
+  }
+  
+  .fa-stop {
+    color: #dc3545;
+  }
+  
+  .fa-pause {
+    color: white;
+  }
+  
+  .timestamp {
     color: white;
     font-weight: bold;
-    margin-left: 10px; }
+    margin-left: 10px;
+  }
+}
+
 
 .btn:focus {
-  outline: 0; }
+  outline: 0;
+}
 
-@media (max-width: 800px) {
+@media(max-width: 800px) {
   .screen,
   .controls {
-    width: 90%; } }
+    width: 90%;
+  }
+}
